@@ -27,6 +27,7 @@ Cross-cutting concerns include things such as logging, security, performance mon
         // securedEnabled = true,
         // jsr250Enabled = true,
         prePostEnabled = true)
+
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     UserDetailsServiceImpl userDetailsService;
