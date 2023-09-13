@@ -7,6 +7,8 @@ import javax.persistence.*;
 
     @Entity
     @Table(name = "roles")
+    @Getter
+    @Setter
     public class Role {
 
         @Id
@@ -19,26 +21,4 @@ import javax.persistence.*;
 
         public Role() {
         }
-
-        // getters and setters
-        public Integer getId() {
-            return id;
-        }
-
-        public void setId(Integer id) {
-            this.id = id;
-        }
-
-        public ERole getName() {
-            return name;
-        }
-
-        public void setName(ERole name) {
-            this.name = name;
-        }
-
-        public Role(ERole name) {
-            this.name = name;
-        }
-
     }
